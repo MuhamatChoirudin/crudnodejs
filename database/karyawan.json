@@ -1,0 +1,66 @@
+[
+    {
+        "NIK": "1234567",
+        "Nama": "Udin",
+        "Jenis Kelamin": 1,
+        "Alamat": "karngan",
+        "Salary": 6000000,
+        "Grade": "A"
+    },
+    {
+        "NIK": "1234568",
+        "Nama": "Tatang",
+        "Jenis Kelamin": 1,
+        "Alamat": "karngan",
+        "Salary": 4500000,
+        "Grade": "B"
+    },
+    {
+        "NIK": "1234569",
+        "Nama": "Surty",
+        "Jenis Kelamin": 0,
+        "Alamat": "karngan",
+        "Salary": 3000000,
+        "Grade": "A"
+    },
+    {
+        "NIK": "1234570",
+        "Nama": "johar",
+        "Jenis Kelamin": 1,
+        "Alamat": "karngan",
+        "Salary": 2500000,
+        "Grade": "B"
+    },
+    {
+        "NIK": "1234571",
+        "Nama": "Titin",
+        "Jenis Kelamin": 0,
+        "Alamat": "karngan",
+        "Salary": 2700000,
+        "Grade": "B"
+    },
+    {
+        "NIK": "1234572",
+        "Nama": "Sumi",
+        "Jenis Kelamin": 0,
+        "Alamat": "karngan",
+        "Salary": 6000000,
+        "Grade": "A"
+    },
+    {
+        "NIK": "1234573",
+        "Nama": "Samsul",
+        "Jenis Kelamin": 1,
+        "Alamat": "karngan",
+        "Salary": 2500000,
+        "Grade": "B"
+    },
+    {
+        "NIK": "1234588",
+        "Nama": "Udin",
+        "Jenis Kelamin": 1,
+        "Alamat": "karngan",
+        "Salary": 6000000,
+        "Grade": "A"
+    }
+]
