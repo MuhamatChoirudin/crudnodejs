@@ -46,18 +46,14 @@ function insert(data,callback){
 }
 
 function update(ac,data,callback){
-    Customer.update({
-        firstName: data.firstName,
-        lastName: data.lastName,
-        birthdate: data.birthdate,
-        username: data.username,
-        password: data.password
+    Account.update({
+        accountName: data.accountName
        
     }, {
         where: {accountNumber: ac}
     }).then(
-        (customer) => {
-            callback(null, customer)
+        (account) => {
+            callback(null, account)
         }
     )
 

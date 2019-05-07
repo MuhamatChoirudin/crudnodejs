@@ -28,6 +28,10 @@ module.exports=(sequelize,DataTypes)=>{
             field:'transaction_type',
             type: DataTypes.INTEGER,
         },
+        accountNumber:{
+            field:'account_number',
+            type: DataTypes.INTEGER,
+        },
     },
     {
         tableName: 'tbl_transaction',

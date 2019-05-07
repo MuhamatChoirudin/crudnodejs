@@ -1,4 +1,7 @@
 const {Customer, Account,Wallet} = require('../database/sequellize');
+const Sequelize = require('sequelize');
+const Op = Sequelize.Op
+//const Op =  require("Sequelize").op;
 
 // function getList(callback){
 //     Customer.findAll().then(
@@ -94,6 +97,18 @@ function remove(cif,callback){
         }
     )
 }
+
+
+function login(username, password, callback){
+    Customer.findOne({
+        where:{
+            [Op.and] : [{username: username},{password: password}]}
+
+    }).then((customer)=>{
+        callback(null,customer);
+    })
+}
+
 // function getById(id, callback){
 //     Customer.findByPk(id, {
 //         include: [{
@@ -127,4 +142,4 @@ function remove(cif,callback){
 //     getById(data.customerNumber, callback);
 // }
 
-module.exports = {getList, getById,remove, insert, update};
+module.exports = {getList, getById,remove, insert, update,login};

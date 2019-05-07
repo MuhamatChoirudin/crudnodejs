@@ -104,6 +104,16 @@ CustomerRoute.delete('/customer/:cif', (req, res, next) => {
     });
 });
 
+CustomerRoute.post('/login', (req, res, next) => {
+    customerDao.login(req.body.username,req.body.password, function(error, result){
+        if(error){
+            resp.notOk(res, error);
+        }else{
+            resp.ok(res, result);
+           
+        }
+    });
+});
 // CustomerRoute.post('/customer', (req, res, next) => {
 //     customerDao.insert(req.body, function(error, data){
 //         if(error){

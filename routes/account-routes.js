@@ -26,6 +26,7 @@ AccountRoute.get('/account/:ac', (req, res)=>{
             resp.notOk(res, error);
         }else if(result){
             resp.ok(res, result);
+            
         }else{
             resp.notFound(res, req.params.cif);
         }
